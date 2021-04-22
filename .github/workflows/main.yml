@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -34,10 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
       - name: Bump version
-        run: npm version prerelease
-          
+        run: npm version prerelease --no-git-tag-version
+
       # Add and commit the changed files
       - uses: EndBug/add-and-commit@v7.0.0
         with:
