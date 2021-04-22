@@ -40,3 +40,4 @@ jobs:
       - uses: EndBug/add-and-commit@v7.0.0
         with:
          message: 'Bumping version'
+         add: '* --force'
