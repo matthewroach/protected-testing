@@ -41,3 +41,4 @@ jobs:
         with:
          message: 'Bumping version'
          add: '* --force'
+         push: origin main --force
